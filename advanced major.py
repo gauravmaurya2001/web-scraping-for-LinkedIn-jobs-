@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import time
 
+#madebygauravmaurya2001
 # Setup Chrome options for headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
@@ -31,6 +32,8 @@ time.sleep(5)  # You can increase if needed
 companies = driver.find_elements(By.XPATH, "//h4[@class='base-search-card__subtitle']")
 titles = driver.find_elements(By.XPATH, "//h3[@class='base-search-card__title']")
 job_list = driver.find_elements(By.XPATH, "//a[@class='base-card__full-link']")
+
+#madebygauravmaurya2001 
 
 # Collect data
 for i in range(len(job_list)):
